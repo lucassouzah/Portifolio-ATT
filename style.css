@@ -1,0 +1,759 @@
+/* Geral */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+}
+
+:root {
+    --gradient: linear-gradient(to right,
+            rgb(61 28 207),
+            rgb(100 50 260),
+            rgb(67 114 252))
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 25px;
+    }
+
+}
+
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    background: #080808;
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280px;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.txt-animado{
+    margin-top: -5%;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+    font-size: 60px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:rgb(102, 67, 255);
+    background-size: 300% 300%;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(61, 28, 207);
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px rgb(102, 67, 255);
+    transform: scale(1.05);
+}
+
+h2.subtitulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.subtitulo span {
+    color: rgb(102, 67, 255);
+}
+
+.scroll-title-secound{
+    color: white;
+    font-size: 25px;
+    text-align: start;
+}
+.scroll-title-secound span{
+    color: rgb(102, 67, 255);
+}
+
+
+/* ESTILO DO HEADER */
+
+header {
+    padding: 45px 4%;
+    background-color: rgba(0, 0, 0, 0.747);
+    box-shadow: 0 0 10px 10px rgba(127, 51, 189, 0.658);
+}
+
+header>.interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header a h1 {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    color: white;
+    font-weight: 600;
+    padding: 0 40px;
+}
+
+header nav ul li a:hover {
+    color: rgb(102, 67, 255);
+    display: inline-block;
+    transform: scale(1.15);
+    transition: .2s;
+}
+
+/* MODO DARK  */
+
+header .trilho {
+    position: relative;
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    background-color: #080808;
+    cursor: pointer;
+}
+
+.trilho .indicador {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(5, 5, 5);
+    transform: scale(.9);
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark {
+    background-color: #000000;
+}
+
+.trilho.dark .indicador {
+    left: 25px;
+    background-color: white;
+}
+
+body.dark {
+    background: rgb(216, 216, 216);
+    height: 100vh;
+    background-size: 300% 300%;
+}
+
+body.dark header nav ul li a {
+    color: black;
+}
+
+body.dark header nav ul li a:hover {
+    color: rgb(102, 67, 255);
+    display: inline-block;
+    transform: scale(1.15);
+    transition: .2s;
+}
+
+body.dark .topo-do-site h1 {
+    color: black;
+}
+
+body.dark .topo-do-site h3{
+    color: black;
+}
+
+body.dark .topo-do-site p {
+    color: black;
+}
+
+body.dark .habilidades h2 {
+    color: black;
+}
+
+body.dark .habilidades h3 {
+    color: black;
+}
+
+body.dark .habilidades P {
+    color: black;
+}
+
+body.dark .habilidades .habilidades-box .bi-filetype-html{
+    color: black;
+    
+}
+body.dark .habilidades .habilidades-box .bi-filetype-css{
+    color: black;
+    
+}
+body.dark .habilidades .habilidades-box .bi-filetype-js{
+    color: black;
+    
+}
+body.dark .habilidades .habilidades-box .bi-filetype-jsx{
+    color: black;
+    
+}
+body.dark .habilidades .habilidades-box .bi-bootstrap{
+    color: black;
+  
+}
+body.dark .habilidades .habilidades-box .bi-github{
+    color: black;
+    
+}
+body.dark .habilidades .habilidades-box .bi-filetype-php{
+    color: black;
+   
+}
+body.dark .habilidades .habilidades-box .bi-filetype-py{
+    color: black;
+   
+}
+
+body.dark .habilidades .habilidades-box .bi-filetype-sql{
+    color: black;
+    
+}
+
+
+body.dark .sobre h2 {
+    color: black;
+}
+
+body.dark .sobre p {
+    color: black;
+}
+
+body.dark .projetos h2 {
+    color: black;
+}
+
+body.dark .contato-titulo {
+    color: black;
+}
+
+/* Final  MODO DARK  */
+
+
+
+/* ESTILO DO MAIN */
+/* Inicio */
+
+section.topo-do-site {
+    margin-top: 150px;
+    padding: 60px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+
+}
+
+.topo-do-site h1 {
+    font-size: 40px;
+    line-height: 22px;
+    line-height: 40px;
+}
+
+.topo-do-site h1 span {
+    padding-left: 10px;
+    color: rgb(102, 67, 255);
+}
+
+.topo-do-site .txt-topo-site p {
+    margin: 40px 0px;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+/* Final do Inicio */
+
+/* Habilidades */
+
+section.habilidades {
+    padding: 60px 4px;
+}
+
+section.habilidades .flex {
+    gap: 20px;
+}
+
+.habilidades .habilidades-box {
+    position: relative;
+    padding: 45px;
+    margin: auto;
+    margin-top: 45px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.habilidades .habilidades-box:hover {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px rgb(102, 67, 255);
+}
+
+
+.habilidades .habilidades-box .bi {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 70px;
+}
+
+.habilidades .habilidades-box .bi-filetype-html{
+    color: white;
+    font-size: 40px;
+}
+.habilidades .habilidades-box .bi-filetype-css{
+    color: white;
+    font-size: 40px;
+}
+.habilidades .habilidades-box .bi-filetype-js{
+    color: white;
+    font-size: 40px;
+}
+.habilidades .habilidades-box .bi-filetype-jsx{
+    color: white;
+    font-size: 40px;
+}
+.habilidades .habilidades-box .bi-bootstrap{
+    color: white;
+    font-size: 40px;
+}
+.habilidades .habilidades-box .bi-github{
+    color: white;
+    font-size: 40px;
+}
+.habilidades .habilidades-box .bi-filetype-php{
+    color: white;
+    font-size: 40px;
+}
+.habilidades .habilidades-box .bi-filetype-py{
+    color: white;
+    font-size: 40px;
+}
+
+.habilidades .habilidades-box .bi-filetype-sql{
+    color: white;
+    font-size: 40px;
+}
+
+
+
+
+
+.habilidades .habilidades-box h3 {
+    font-size: 28px;
+    margin: 10px 10px;
+}
+
+/* Final Habilidades */
+
+/* Sobre */
+
+section.sobre {
+    padding: 60px 4px;
+}
+
+.sobre .img-sobre img {
+    width: 480px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 10px 0px 20px rgb(87, 19, 247);
+}
+
+
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+.sobre .sub-social{
+    color: rgb(102, 67, 255);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.sobre .txt-sobre h2 span {
+    color: rgb(102, 67, 255);
+    display: block;
+}
+
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.btn-social button {
+    width: 55px;
+    height: 55px;
+    margin: 0 10px;
+    border-radius: 27px;
+    border: none;
+    background-color: rgb(61, 28, 207);
+    font-size: 30px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* Final Sobre */
+
+/* Projetos */
+
+section.projetos {
+    padding: 60px 4px;
+}
+
+section.projetos .flex {
+    padding-top: 70px;
+    justify-content: space-around;
+}
+
+.projeto-box {
+    margin-top: 10px;
+}
+
+.img-projetos {
+    width: 360px;
+    height: 500px;
+    border-radius: 30px;
+    background-size: cover;
+    background-position: 100% 0%;
+    cursor: pointer;
+    transition: 7s;
+    position: relative;
+}
+
+.img-projetos:hover {
+    background-position: 100% 100%;
+}
+
+.overlay {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000cc;
+    box-shadow: 0px 0px 8px rgb(102, 67, 255);
+    border-radius: 30px;
+    transition: .3s;
+    opacity: 0;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.projetos p {
+    font-size: 17px;
+}
+
+.projetos .overlay i {
+    font-size: 30px;
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.projetos .img-projetos .btn-repositorio {
+    display: flex;
+    justify-content: end;
+}
+
+.projetos .img-projetos .btn-repositorio button {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    border-radius: 27px;
+    border: none;
+    background-color: rgb(50, 4, 124);
+    font-size: 23px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.projetos .img-projetos .btn-repositorio button:hover {
+    box-shadow: 0px 0px 8px rgb(102, 67, 255);
+    transform: scale(1.20);
+}
+
+.btn-repositorio{
+    padding: 2px;
+}
+/* Final Projetos */
+
+
+/* Formulario */
+section.formulario {
+    padding: 80px 4%;
+    box-shadow: 0 0 5px 5px rgba(127, 51, 189, 0.658);
+}
+
+form {
+    padding: 40px 4%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+
+}
+
+form input{
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 20px 15px;
+    background-color: rgba(94, 90, 90, 0.459);
+    color: white;
+    font-size: 15px;
+    outline: 0;
+}
+
+form input::placeholder {
+    color: white;
+}
+
+form textarea::placeholder {
+    color: white;
+}
+
+form textarea {
+    resize: none;
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 20px;
+    height: 200px;
+    background-color: rgba(94, 90, 90, 0.459);
+    padding: 20px 15px;
+    font-size: 15px;
+    outline: 0;
+
+}
+
+form .btn-enviar {
+    margin: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+    padding: 10px 40px;
+    width: 150px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: rgb(61, 28, 207);
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+
+form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px rgb(102, 67, 255);
+    transform: scale(1.05);
+}
+
+
+.btn-up-site{
+    display: flex;
+    justify-content: right;
+}
+
+/* Final Formulario */
+
+
+
+/* FOOTER */
+
+footer {
+    padding: 40px 4%;
+    background-color: black;
+}
+
+footer .flex {
+    justify-content: space-between;
+}
+
+footer a h1 {
+    background-image: var(--gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* FOOTER */
+
+
+/* EFEITO SCROLL  */
+.scroll-title-primary, .scroll-title-secound,
+.scroll-paragrafo-primary .scroll-btn-primary .img-topo-site,
+.habilidades,
+.img-sobre,
+.titulo-sobre,
+.btn-social,
+.paragrafo-sobre, 
+.sub-projetos,
+.projeto-box {
+    visibility: hidden;
+}
+
+/* EFEITO SCROLL  */
+
+
+/* RESPONSIVIDADE  */
+@media screen and (max-width:1020px) {
+
+    /* header  */
+    .menu-desktop,
+    .btn-contato {
+        display: none;
+    }
+
+
+
+    /* Geral  */
+    .flex {
+        flex-direction: column;
+    }
+
+    h2.subtitulo {
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    /* INICIO */
+
+    .txt-animado {
+        font-size: 45px;
+    }
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .topo-do-site h1 {
+        font-size: 30px;
+    }
+
+    .topo-do-site .img-topo-site img {
+        width: 100%;
+    }
+
+    /* Habilidades */
+    section.habilidades {
+        padding: 40px 4%;
+    }
+
+    /* Sobre */
+    section.sobre{
+        padding: 80px 8%;
+    }
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 80%;
+    }
+
+    /* Projetos */
+
+    section.projetos{
+        padding: 80x 8%;
+    }
+
+    .img-projetos {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.projetos .flex{
+        gap: 60px;
+    }
+
+    /* FOOTER */
+
+    footer .flex{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+}
