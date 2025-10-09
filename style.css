@@ -179,7 +179,7 @@ header .trilho {
 }
 
 body.dark {
-    background: rgb(216, 216, 216);
+    background: rgb(255, 255, 255);
     height: 100vh;
     background-size: 300% 300%;
 }
@@ -398,7 +398,7 @@ section.habilidades .flex {
 
 /* Final Habilidades */
 
-/* Sobre */
+/* Sobre */                     
 
 section.sobre {
     padding: 60px 4px;
@@ -408,7 +408,7 @@ section.sobre {
     width: 480px;
     height: 550px;
     border-radius: 20px;
-    box-shadow: 10px 0px 20px rgb(87, 19, 247);
+    box-shadow:5px 0px 10px rgb(87, 19, 247)
 }
 
 
